@@ -1,0 +1,50 @@
+.containerInscription{
+    margin: 0 auto;
+    height:846px;
+}
+
+.contentInscription{
+    height:598px;
+}
+.input{
+    height:32px;
+}
+
+.loginContainer{
+    width: 26rem;
+}
+
+.btn_account {
+    background: #f8c945;
+    color: #f1f1f1;
+    border-radius: 5px;
+
+    /* Figma */
+    width: 300px;
+    height: 50px;
+
+}
+
+
+/* En survole */
+.btn_account:hover {
+    background: #dbb23d;
+    border: 0.5px;
+    border-style: solid;
+    border-color: #fcc52e;
+    color: rgb(0, 0, 0);
+}
+
+@media screen and (min-width: 640px) {
+    .btn_account {
+        background: #f8c945;
+        color: #f1f1f1;
+        border-radius: 5px;
+    
+        /* Figma */
+        width: 300px;
+        height: 50px;
+    
+    }
+  }
+

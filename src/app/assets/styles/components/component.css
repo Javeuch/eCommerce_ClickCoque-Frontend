@@ -1,0 +1,475 @@
+@tailwind components;
+
+@layer components {
+
+    #root {
+        @apply h-full
+    }
+
+    *,
+    ::before,
+    ::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    /* LINKS */
+    .link {
+        /*  @apply text-base font-medium text-gray-500 cursor-pointer hover: text-primary; */
+    }
+
+    /* GEOMETRY */
+    .point {
+        @apply w-4 h-4 p-2 mt-2 rounded-full;
+    }
+
+    /* @Author: Maxime
+       @Component: Home
+     */
+
+    /* Container */
+    .container_home {
+        position: relative;
+        width: 1440px;
+        height: 100%;
+        background: #E3E3E3;
+    }
+
+
+    /* ----------------- TITLE HEADER ACCUEIL ---------------------- */
+
+    /* ------- Title Accueil ------- */
+    .title_home {
+        /* font-family: 'Nunito'; */
+        font-style: normal;
+        color: #f1f1f1;
+
+        /* Figma */
+        font-weight: 800;
+
+    }
+
+    /* --------- Background -------- */
+    .cover_home {
+        background-image: url('./../../images/HomePage/BOUTIQUE-BANDEAU 1.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: left;
+        filter: blur(1px);
+        filter: contrast(50%);
+
+        /* Figma */
+        height: 641px;
+    }
+
+    /* --------- Button header accueil -------- */
+    .btn_home_discover {
+        background: #f8c945;
+        color: #f1f1f1;
+        border-radius: 5px;
+
+        /* Figma */
+        width: 300px;
+        height: 50px;
+
+        /* Si en valeur "Absolute" */
+        top: 600px;
+        right: 90px;
+    }
+
+
+    /* En survole */
+    .btn_home_discover:hover {
+        background: #dbb23d;
+        border: 0.5px;
+        border-style: solid;
+        border-color: violet;
+    }
+
+    /* -------------------------------------------- */
+
+    /* --------- Cards -------- */
+    .cardContainer {
+        width: auto;
+        height: auto;
+    }
+
+    .cardImg {
+        max-width: 230px;
+        max-height: 230px;
+        width: auto;
+        height: 230px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+    .btn_card {
+        background: #f8c945;
+        color: #f1f1f1;
+        border-radius: 5px;
+        width: 2em;
+        height: 1.5em;
+    }
+
+    .cardFavori {
+        width: 30px;
+        height: 30px;
+        object-fit: contain;
+    }
+
+    .btn_home_cardList {
+        background: #f8c945;
+        color: #f1f1f1;
+        border-radius: 5px;
+        justify-content: center;
+        align-items: center;
+
+        /* Figma */
+        width: 300px;
+        height: 50px;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .hr_Style {
+        width: auto;
+        border-top: 0px solid #f8f8f8;
+        border-bottom: 0px solid rgba(0, 0, 0, 0.5);
+    }
+
+    .grad1 {
+        height: 400px;
+        background-image: linear-gradient(to top, rgba(229, 231, 235, 0), rgba(229, 231, 235, 1));
+        display: block;
+    }
+
+    /* --------- Carousel -------- */
+    .carousel_base {
+        height: 360px;
+    }
+
+    .img_Carousel_1 {
+        background-image: url(kisspng-samsung-electronics-samsung-galaxy-samsung-logo-5b2250c8e320f3.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: left;
+    }
+
+    .prev,
+    .next {
+        cursor: pointer;
+        top: 50%;
+        width: auto;
+        margin-top: -22px;
+        padding: 16px;
+        color: black;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+    }
+
+    /* -------------------------------------------- */
+
+    /* --------- Pub Produit -------- */
+    .left_pub {
+        background-image: url('./../../images/HomePage/grande_image_1.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .right_pub1 {
+        min-width: 50%;
+        min-height: 100%;
+        cursor: pointer;
+        background-image: url('./../../images/HomePage/grande_image_2.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .right_pub2 {
+        min-width: 50%;
+        min-height: 100%;
+        cursor: pointer;
+        background-image: url('./../../images/HomePage/grande_image_3.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .btn_pub {
+        position: absolute;
+        background: #f8c945;
+        color: #f1f1f1;
+        border-radius: 5px;
+
+        /* Figma */
+        width: 300px;
+        height: 50px;
+        display: block;
+        margin: 0 auto;
+    }
+
+    /* -------------------------------------------- */
+
+    /* --------- Login Page -------- */
+    .BoxSizeLogin {
+        width: 70%;
+        height: auto;
+    }
+
+    .hrLogin {
+
+        border: none;
+        height: 400px;
+        width: 3px;
+        transform: translateY(8%);
+    }
+
+    /* -------------------------------------------- */
+
+    #container {
+        margin: 1rem;
+    }
+
+    .items {
+        margin-bottom: 1rem;
+    }
+
+    /* --------- Contact CSS -------- */
+
+    .hrContact {
+        width: 80%;
+        border-bottom: 3px solid rgba(248, 201, 69, 1);
+        justify-content: center;
+            align-items: center;
+    }
+
+    /* -------------------------------------------- */
+
+    /* --------- Responsive CSS -------- */
+
+    @media all and (max-width: 639px) {
+
+        .cardContainer {
+            min-width: 200px;
+            min-height: 200px;
+
+            justify-content: center;
+            align-items: center;
+            display: block;
+            margin: 0 auto;
+
+            width: 75%;
+            height: 75%;
+        }
+
+        .title_home {
+            /* Figma */
+            left: 20px;
+            font-size: 30px;
+            line-height: 47px;
+        }
+
+        .btn_home_discover {
+
+            /* Figma */
+            width: 150px;
+            height: 35px;
+            left: 90px;
+        }
+
+        .cadenas,
+        .price,
+        .recycle,
+        .award,
+        .delivery,
+        .afterSalesService {
+            background-size: 30px;
+            background-repeat: no-repeat;
+
+        }
+
+        .btn_home_cardList {
+            width: 150px;
+            height: 50px;
+            font-size: 14px;
+        }
+
+        .hr_Style {
+            width: auto;
+            border-top: 1px solid #f8f8f8;
+            border-bottom: 2px solid rgba(0, 0, 0, 0.5);
+        }
+
+        .btn_pub {
+            width: 150px;
+            height: 50px;
+            font-size: 18px;
+        }
+    }
+
+    /* -------------------------------------------- */
+
+
+    .centerUI {
+        display: flex;
+        flex: wrap;
+        text-align: center;
+    }
+
+    /* BUTTON HOME */
+    .container_home_discover {
+        position: relative;
+        width: 250px;
+        height: 50px;
+        left: 1107px;
+        top: 616px;
+
+        background: #F8C945;
+        border-radius: 5px;
+    }
+
+    .prev,
+    .next {
+        cursor: pointer;
+        top: 50%;
+        width: auto;
+        margin-top: -22px;
+        padding: 16px;
+        color: black;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+    }
+
+    .prev:hover,
+    .next:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+
+
+    /* FOOTERS */
+
+    .hrFooter {
+        width: 75%;
+        border-bottom: 3px solid rgba(248, 201, 69, 1);
+
+    }
+
+    .poligonOrange {
+        clip-path: polygon(300px 100px, 300px 100px, 300px 300px, 100px 300px);
+        background-color: #ff5900
+    }
+
+
+    .footer1 {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        Width: 100%;
+        Height: 40%;
+        Top: 725px;
+    }
+
+    /* -------------------------------------------- */
+
+    .cadenas {
+        background-image: url('./../../images/HomePage/picto_cadenas.png');
+        position: relative;
+        text-align: center;
+        width: 40px;
+        height: 40px;
+        top: 0px;
+    }
+
+    .price {
+        background-image: url('./../../images/HomePage/picto_price.png');
+        position: relative;
+        text-align: center;
+        width: 40px;
+        height: 40px;
+        top: 0px;
+
+    }
+
+    .recycle {
+        background-image: url('./../../images/HomePage/picto_recycle.png');
+        position: relative;
+        text-align: center;
+        width: 40px;
+        height: 40px;
+        top: 0px;
+    }
+
+    .delivery {
+        background-image: url('./../../images/HomePage/boite_en_carton_fermee_avec_ruban_demballage.png');
+        position: relative;
+        text-align: center;
+        width: 40px;
+        height: 40px;
+        top: 0px;
+    }
+
+    .award {
+        background-image: url('./../../images/HomePage/picto_award.png');
+        position: relative;
+        text-align: center;
+        width: 40px;
+        height: 40px;
+        top: 0px;
+    }
+
+    .afterSalesService {
+        background-image: url('./../../images/HomePage/picto_televendeur.png');
+        position: relative;
+        text-align: center;
+        width: 40px;
+        height: 40px;
+        top: 0px;
+    }
+
+    /* BRAND & PRODUCTS IMAGES */
+
+    .google {
+        background-image: url('./../../images/HomePage/grande_image_1.png');
+        position: relative;
+        width: 544px;
+        height: 603px;
+        left: 50px;
+        top: 2642px;
+    }
+
+    .onePlus {
+        background-image: url('./../../images/HomePage/grande_image_2.png');
+        position: relative;
+        width: 771px;
+        height: 285px;
+        left: 619px;
+        top: 2642px;
+    }
+
+    .coqueOppo {
+        background-image: url('./../../images/HomePage/coque_oppo_reno_6_5G_effet_cuir_litchi.png');
+        position: relative;
+        width: 250px;
+        height: 285px;
+        left: 619px;
+        top: 2960px;
+    }
+
+    .threeCoques {
+        background-image: url('./../../images/HomePage/grande_image_3.png');
+        position: relative;
+        width: 771px;
+        height: 285px;
+        left: 619px;
+        top: 2960px;
+    }
+
+}
