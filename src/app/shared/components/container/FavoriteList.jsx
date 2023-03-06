@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 import apiBackEnd from '../../../api/backend/api.Backend';
 import ProductItem from './ProductItem';
 import { useHistory } from 'react-router-dom';
-// import FavoriteList from './FavoriteList';
 
 function FavoriteList() {
     const [favoriteList, setFavoriteList] = useState([]);
@@ -18,7 +17,7 @@ function FavoriteList() {
             setFavoriteList(response.data);
         });
     }, []);
-    // console.log('liste des favoris',favoriteList);
+
     return (
         <div className="mt-20">
             <ul className="grid grid-cols-4 auto-rows-max gap-5 mx-20">

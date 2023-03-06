@@ -300,7 +300,7 @@ const OrderPaymentView = ({ id }) => {
                                 Total TTC :
                             </p>
                             <p className="text-2xl font-bold leading-normal text-right text-gray-800 pt-20">
-                                {getTotalPrice() + shippingCosts || 0} €
+                                {(getTotalPrice() + shippingCosts).toFixed(2) || 0} €
                             </p>
                         </div>
 
